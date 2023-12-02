@@ -1,0 +1,56 @@
+.flexBox {
+  display: flex;
+}
+
+/* Row */
+.flexRow {
+  flex-direction: row;
+}
+
+.flexRowCenter {
+  align-items: center;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.flexBetween {
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+
+/* Col */
+.flexCol {
+  flex-direction: column;
+}
+
+.flexColCenter {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.fullHeight {
+  height: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.flexGrow {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.noShrink {
+  flex-shrink: 0;
+}
+
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+}

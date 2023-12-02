@@ -1,0 +1,49 @@
+.app {
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-header {
+  //background-color: #333;
+  //color: #fff;
+  border-bottom: 1px solid #ddd;
+
+  .ci {
+
+  }
+
+  .menu {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    //font-weight: 600;
+    &.selected {
+      color: cadetblue;
+    }
+  }
+
+  & + div {
+    height: 2000px;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: auto;
+    padding: 8px;
+
+    section {
+      width: 600px;
+      min-height: 600px;
+    }
+  }
+}
+
+.company {
+  align-items: center;
+  .company-info {
+    display: grid;
+    grid-template-columns: 80px auto;
+
+    dt, dd {
+      margin: 0;
+      padding: .5rem;
+    }
+  }
+}
