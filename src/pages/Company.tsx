@@ -1,7 +1,7 @@
 import React from "react";
 import {Flex} from "../components/FlexBox/FlexBox.tsx";
 
-export const Company: React.FC<{}> = () => {
+export const Company: React.FC = () => {
     const companyInfo = [
         ["회사명", "쓰리아이퓨처 주식회사"],
         ["대표이사", "고훈석"],
@@ -12,6 +12,13 @@ export const Company: React.FC<{}> = () => {
     ]
     return (
         <Flex.ColCenter className={'company'}>
+            <Flex.Center className={'main-slogan'}>
+                <section>
+                    <b>아이디어 혁신</b>과 <b>기술력 배양</b>을 통해<br/>
+                    <b>고품질 솔루션</b>을 개발하는<br/><br/>
+                    <b>우수한 통합관제, AI 기업</b>
+                </section>
+            </Flex.Center>
             <section>
                 <h3>회사 개요</h3>
                 <p>

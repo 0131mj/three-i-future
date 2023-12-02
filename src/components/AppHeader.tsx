@@ -9,7 +9,9 @@ export const AppHeader: React.FC = () => {
     const {pathname} = useLocation();
     return (
         <Flex.Between fullWidth className={'app-header'}>
-            <Link className={'ci'} to={'/'}>CI</Link>
+            <Link className={'ci'} to={'/'}>
+                3IF
+            </Link>
             <Flex.Between className={'menus'} gap={16}>
                 {
                     Object.entries(AppMenus).map(([k, {title, subMenu}]) => {
