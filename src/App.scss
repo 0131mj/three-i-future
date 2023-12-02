@@ -4,8 +4,7 @@
 }
 
 .app-header {
-  //background-color: #333;
-  //color: #fff;
+  padding: 0 calc(100vh - 600px);
   border-bottom: 1px solid #ddd;
 
   .ci {
@@ -15,9 +14,11 @@
   .menu {
     padding: 1rem 1rem;
     font-size: 1.2rem;
-    //font-weight: 600;
+    color: #666;
+
     &.selected {
-      color: cadetblue;
+      color: #000;
+      font-weight: 600;
     }
   }
 
@@ -29,14 +30,15 @@
     padding: 8px;
 
     section {
-      width: 600px;
-      min-height: 600px;
+      width: 1200px;
+      padding: 1rem 0;
     }
   }
 }
 
 .company {
   align-items: center;
+
   .company-info {
     display: grid;
     grid-template-columns: 80px auto;
@@ -46,4 +48,25 @@
       padding: .5rem;
     }
   }
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.2rem;
 }

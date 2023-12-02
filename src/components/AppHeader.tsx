@@ -7,7 +7,7 @@ export const AppHeader: React.FC<{}> = () => {
 
     const {pathname} = useLocation();
     return (
-        <Flex.Center fullWidth className={'app-header'}>
+        <Flex.Between fullWidth className={'app-header'}>
             <Link className={'ci'} to={'/'}>CI</Link>
             <Flex.Between className={'menu'} gap={16}>
                 {
@@ -27,6 +27,6 @@ export const AppHeader: React.FC<{}> = () => {
                     })
                 }
             </Flex.Between>
-        </Flex.Center>
+        </Flex.Between>
     );
 };
