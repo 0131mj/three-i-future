@@ -14,7 +14,7 @@ export const Company: React.FC = () => {
         <Flex.ColCenter className={'company'}>
             <Flex.Center className={'main-slogan'}>
                 <section>
-                    <b>아이디어 혁신</b>과 <b>기술력 배양</b>을 통해<br/>
+                    <b>아이디어 혁신</b>과<br/> <b>기술력 배양</b>을 통해<br/>
                     <b>고품질 솔루션</b>을 개발하는<br/><br/>
                     <b>우수한 통합관제, AI 기업</b>
                 </section>
@@ -43,7 +43,7 @@ export const Company: React.FC = () => {
             </section>
             <section>
                 <h3>당사 현황</h3>
-                <h4>지속적인 연구 개발로 소프트웨어 시장에서의 기술을 선도</h4>
+                <h4>"지속적인 연구 개발로 소프트웨어 시장에서의 기술을 선도"</h4>
                 <br/>종합상황실 구축 컨설팅
                 <br/>디지털 정보처리
                 <br/>AI 기반 영상인식 솔루션
@@ -51,7 +51,7 @@ export const Company: React.FC = () => {
             </section>
             <section>
                 <h3>경영 전략</h3>
-                <h4>고객만족</h4>
+                <h4>"고객만족"</h4>
 
                 <h5>연구개발</h5>
                 다양한 구축경험의 최고의 전문가 투입<br/>
@@ -81,8 +81,7 @@ export const Company: React.FC = () => {
             <section>
                 <h3>비전</h3>
                 <Flex.ColCenter>
-                    <h4>최고의 제품과 서비스를 창출하여
-                        고객만족 실현</h4>
+                    <h4>"최고의 제품과 서비스를 창출하여 고객만족 실현"</h4>
                     <p>영상분석 및 전송기술 개발 성공으로
                         영상처리 선도기업 도약</p>
                     <Flex.Between fullWidth style={{alignItems: "flex-start"}}>
