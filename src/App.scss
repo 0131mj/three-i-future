@@ -11,16 +11,47 @@
 
   }
 
-  .menu {
-    padding: 1rem 1rem;
-    font-size: 1.2rem;
-    color: #666;
+  .menus {
+    padding: 1rem;
 
-    &.selected {
-      color: #000;
-      font-weight: 600;
+    .menu {
+      padding: 1rem 1rem;
+      font-size: 1.2rem;
+      color: #666;
+      position: relative;
+
+      > a {
+        &.selected {
+          color: #000;
+          font-weight: 600;
+        }
+      }
+
+      &:hover {
+        .submenus {
+          display: flex;
+        }
+      }
+
+      .submenus {
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 3.2rem;
+        width: 400px;
+        border: 1px solid #eee;
+        word-break: keep-all;
+
+        a {
+          padding: 1rem;
+          &:not(:first-child){
+            border-top: 1px solid #eee;
+          }
+        }
+      }
     }
   }
+
 
   & + div {
     height: 2000px;
@@ -50,7 +81,7 @@
   }
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
