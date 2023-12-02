@@ -12,19 +12,26 @@ function App() {
                 <AppHeader/>
                 <Routes>
                     <Route path="/" element={<Navigate replace to="/company"/>}/>
-                    {Object.entries(AppMenus).map(([key, {Component = <>{key}</>, subMenu}]) => (
-                        <React.Fragment key={key}>
+                    {Object.entries(AppMenus).map(([menu, {Component = <>{menu}</>, subMenu}]) => (
+                        <React.Fragment key={menu}>
                             {
                                 subMenu
-                                    ? Object.entries(subMenu).map(
-                                        ([submenuKey, {Component}]) => (
-                                            <Route
-                                                key={key}
-                                                path={`/${key}/${submenuKey}`}
-                                                element={Component}
-                                            />
-                                        ))
-                                    : <Route path={`/${key}`} element={Component}/>
+                                    ? (
+                                        <>
+                                            {
+                                                Object.entries(subMenu).map(
+                                                    ([submenu, {Component}]) => (
+                                                        <Route
+                                                            key={menu}
+                                                            path={`/${menu}/${submenu}`}
+                                                            element={Component}
+                                                        />
+                                                    ))
+                                            }
+                                            <Route path={`/${menu}`} element={<Navigate replace to={`/${menu}/${Object.keys(subMenu)[0]}`}/>}/>
+                                        </>
+                                    )
+                                    : <Route path={`/${menu}`} element={Component}/>
                             }
                         </React.Fragment>
                     ))}

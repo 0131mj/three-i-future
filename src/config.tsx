@@ -1,6 +1,7 @@
 import React from "react";
 import {Company} from "./pages/Company.tsx";
 import {Flex} from "./components/FlexBox/FlexBox.tsx";
+import {DeepLearning} from "./pages/DeepLearning.tsx";
 
 interface AppMenu {
     [key: string]: {
@@ -20,10 +21,7 @@ export const AppMenus: AppMenu = {
         subMenu: {
             deepLearning: {
                 title: "딥러닝 영상분석 솔루션",
-                Component: <Flex.ColCenter>
-                    <section>: 딥러닝 기반 영상분석 솔루션은 광범위한 통합 업체와 협력하여 고객을 위한 비용 효율적인 맞춤형 시스템을 구축합니다.
-                    </section>
-                </Flex.ColCenter>,
+                Component: <DeepLearning/>,
             },
             dual: {
                 title: "듀얼 카메라 기반 다중센서 시스템",
