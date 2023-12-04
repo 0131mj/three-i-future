@@ -8,7 +8,7 @@ import {AppMenus} from "./config.tsx";
 function App() {
     return (
         <Flex.Col className={'app'}>
-            <BrowserRouter>
+            <BrowserRouter basename={'/three-i-future'}>
                 <AppHeader/>
                 <Routes>
                     <Route path="/" element={<Navigate replace to="/company"/>}/>
