@@ -1,14 +1,14 @@
 import React from "react";
 import './App.scss'
 import {Flex} from "./components/FlexBox/FlexBox.tsx";
-import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import {AppHeader} from "./components/AppHeader.tsx";
 import {AppMenus} from "./config.tsx";
 
 function App() {
     return (
         <Flex.Col className={'app'}>
-            <HashRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <AppHeader/>
                 <Routes>
                     <Route path="/" element={<Navigate replace to="/company"/>}/>
@@ -36,7 +36,7 @@ function App() {
                         </React.Fragment>
                     ))}
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </Flex.Col>
     )
 }
