@@ -28,9 +28,18 @@ export const DeepLearning: React.FC = () => {
                 </ul>
                 <h4>실제 구축 사례</h4>
                 <Flex.Between fullWidth>
-                    <Flex.Col>딥러닝 영상처리 및 분석</Flex.Col>
-                    <Flex.Col>통합관제모니터링</Flex.Col>
-                    <Flex.Col>APP기반 상황전파</Flex.Col>
+                    <Flex.ColCenter gap={8}>
+                        <img src="../img/deep/example_01.png" alt="딥러닝 영상처리 및 분석"/>
+                        딥러닝 영상처리 및 분석
+                    </Flex.ColCenter>
+                    <Flex.ColCenter gap={8}>
+                        <img src="../img/deep/example_02.png" alt="통합관제모니터링"/>
+                        통합관제모니터링
+                    </Flex.ColCenter>
+                    <Flex.ColCenter gap={8}>
+                        <img src="../img/deep/example_03.png" alt="APP기반 상황전파"/>
+                        APP기반 상황전파
+                    </Flex.ColCenter>
                 </Flex.Between>
 
 
