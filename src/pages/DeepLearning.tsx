@@ -41,8 +41,6 @@ export const DeepLearning: React.FC = () => {
                         APP기반 상황전파
                     </Flex.ColCenter>
                 </Flex.Between>
-
-
             </section>
         </Flex.ColCenter>
     );

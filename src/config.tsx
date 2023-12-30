@@ -2,6 +2,7 @@ import React from "react";
 import {Company} from "./pages/Company.tsx";
 import {Flex} from "./components/FlexBox/FlexBox.tsx";
 import {DeepLearning} from "./pages/DeepLearning.tsx";
+import {SmartRadar} from "./pages/SmartRadar.tsx";
 
 interface AppMenu {
     [key: string]: {
@@ -53,6 +54,7 @@ export const AppMenus: AppMenu = {
         subMenu: {
             smartRadar: {
                 title: "Smart Radar",
+                Component: <SmartRadar/>
             },
         }
     },
