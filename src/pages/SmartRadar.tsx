@@ -10,8 +10,8 @@ export const SmartRadar: React.FC = () => {
                         <h3 style={{fontSize: 48}}>스마트 레이더감지기</h3>
                         <h5 style={{margin: 0, textAlign: "left"}}>3IF-SRC-2CH</h5>
                         <ul style={{marginLeft: -36}}>
-                            <li>일반적 침입감지 기능 + AI 기반 영상분석, 통신, 데이터 처리를 한 번에!</li>
                             <li>2채널 레이더센서의 듀얼센서 감시장치 + AI융합 임베디드 보드로 구성</li>
+                            <li>일반적 침입감지 기능 + AI 기반 영상분석, 통신, 데이터 처리를 한 번에!</li>
                         </ul>
                     </Flex.Col>
                     <Flex.Center style={{padding: "0"}}>
