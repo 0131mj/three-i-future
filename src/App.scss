@@ -14,8 +14,6 @@
 
   .menus {
     padding: 1rem;
-
-
     .menu {
       padding: 1rem 1rem;
       font-size: 1.2rem;
@@ -25,7 +23,7 @@
 
       > a {
         &.selected {
-          color: #000;
+          color: var(--primary);
         }
       }
 
@@ -127,7 +125,7 @@
   }
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
   margin: 0;
   font-family: ONE-Mobile-Title, sans-serif;
   font-weight: normal;
@@ -152,11 +150,37 @@ h6 {
 dl {
   display: grid;
   grid-template-columns: 150px auto;
+  margin-top: 4rem;
+
   dt, dd {
     padding: .5rem;
   }
 
   dt {
     color: #666666;
+  }
+}
+
+ul.feature {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    background: var(--primary);
+    color: #fff;
+    padding: 3rem 2rem 2rem 2rem;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    border-radius: 50%;
+    font-size: 1.25rem;
   }
 }
