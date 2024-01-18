@@ -127,6 +127,11 @@ export const SmartRadar: React.FC = () => {
                     </dl>
                 </Flex.Between>
             </section>
+            <section>
+                <Flex.Center style={{padding: "0"}}>
+                    <img src="../img/smart/Smart Radar AI Model.png" alt="스마트레이더 모델"/>
+                </Flex.Center>
+            </section>
         </Flex.ColCenter>
     );
 };
