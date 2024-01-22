@@ -8,12 +8,15 @@
   border-bottom: 1px solid #ddd;
 
   .ci {
-    font-size: 2.5rem;
-    color: var(--primary);
+    img {
+      height: 52px;
+      margin-top: 14px;
+    }
   }
 
   .menus {
     padding: 1rem;
+
     .menu {
       padding: 1rem 1rem;
       font-size: 1.2rem;
