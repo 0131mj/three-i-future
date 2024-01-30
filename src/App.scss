@@ -24,7 +24,7 @@
       position: relative;
       font-family: ONE-Mobile-Title, sans-serif;
 
-      > a {
+      >a {
         &.selected {
           color: var(--primary);
         }
@@ -58,7 +58,7 @@
   }
 
 
-  & + div {
+  &+div {
     height: 2000px;
     flex-grow: 1;
     flex-basis: 0;
@@ -87,6 +87,7 @@
   0% {
     background-size: 100% auto;
   }
+
   100% {
     background-size: 110% auto;
   }
@@ -123,14 +124,18 @@
     display: grid;
     grid-template-columns: 100px auto;
 
-    dt, dd {
+    dt,
+    dd {
       margin: 0;
       padding: .5rem;
     }
   }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   font-family: ONE-Mobile-Title, sans-serif;
   font-weight: normal;
@@ -157,7 +162,8 @@ dl {
   grid-template-columns: 150px auto;
   margin-top: 4rem;
 
-  dt, dd {
+  dt,
+  dd {
     padding: .5rem;
   }
 
@@ -187,5 +193,11 @@ ul.feature {
     word-break: keep-all;
     border-radius: 50%;
     font-size: 1.25rem;
+  }
+}
+
+.catalogue-download-btn {
+  &:hover {
+    color: gold;
   }
 }

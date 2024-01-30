@@ -10,8 +10,7 @@ export const AppHeader: React.FC = () => {
     return (
         <Flex.Between fullWidth className={'app-header'}>
             <Link className={'ci'} to={'/'}>
-                {/*<img src="../img/smart/smart_03.png" alt="스마트 영상분석기"/>*/}
-                <img src="../img/logo2.png" alt="메인 로고"/>
+                <img src="img/logo2.png" alt="메인 로고"/>
             </Link>
             <Flex.Between className={'menus'} gap={16}>
                 {
